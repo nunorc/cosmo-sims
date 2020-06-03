@@ -12,7 +12,7 @@ Nsample          64       % sets the maximum k that the code uses,
                            % total number of particles
  
 
-Box              50000.0  % Periodic box size of simulation
+Box              150000.0  % Periodic box size of simulation
 
 FileBase         lcdm-dm             % Base-filename of output files
 OutputDir        ./ics/              % Directory for output
@@ -20,19 +20,19 @@ OutputDir        ./ics/              % Directory for output
 GlassFile        ../../N-GenIC/dummy_glass.dat  % File with unperturbed glass or
                                   % Cartesian grid
 
-TileFac          4                % Number of times the glass file is
+TileFac          8                % Number of times the glass file is
                                   % tiled in each dimension (must be
                                   % an integer)
 
 
-Omega            0.3       % Total matter density  (at z=0)
-OmegaLambda      0.7       % Cosmological constant (at z=0)
-OmegaBaryon      0.0      % Baryon density        (at z=0)
-HubbleParam      0.7       % Hubble paramater (may be used for power spec parameterization)
+Omega            0.227      % Total matter density  (at z=0)
+OmegaLambda      0.728       % Cosmological constant (at z=0)
+OmegaBaryon      0.045      % Baryon density        (at z=0)
+HubbleParam      0.72       % Hubble paramater (may be used for power spec parameterization)
 
-Redshift         100        % Starting redshift
+Redshift         63        % Starting redshift
 
-Sigma8           0.9       % power spectrum normalization
+Sigma8           0.8       % power spectrum normalization
 
 
 
@@ -68,7 +68,7 @@ PrimordialIndex  1.0       % may be used to tilt the primordial index,
                            % primordial spectrum is k^PrimordialIndex
 
 		  
-Seed             123456    %  seed for IC-generator
+Seed             111111    %  seed for IC-generator
 
 
 NumFilesWrittenInParallel 1  % limits the number of files that are
